@@ -1,0 +1,728 @@
+{
+  "seed": 42,
+  "reference_segments": 2,
+  "candidate_segments": 28,
+  "rejected_segments": 26,
+  "references": [
+    "S004R01@0s",
+    "S004R01@8s"
+  ],
+  "reference_details": [
+    {
+      "reference": "S004R01@0s",
+      "channels": [
+        "Fc5",
+        "Fc3",
+        "Fcz",
+        "Fc2",
+        "Fc4",
+        "Fc6",
+        "C5",
+        "C3",
+        "C1",
+        "Cz",
+        "C2",
+        "C4",
+        "C6",
+        "Cp5",
+        "Cp3",
+        "Cp1",
+        "Cpz",
+        "Cp2",
+        "Cp4",
+        "Cp6",
+        "Fp1",
+        "Fpz",
+        "Fp2",
+        "Afz",
+        "Af4",
+        "F1",
+        "Fz",
+        "F2",
+        "F4",
+        "F6",
+        "Ft7",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "Tp7",
+        "Tp8",
+        "P7",
+        "P5",
+        "P3",
+        "P1",
+        "Pz",
+        "P2",
+        "P4",
+        "P6",
+        "P8",
+        "Po7",
+        "Po3",
+        "Poz",
+        "Po4",
+        "Po8",
+        "O1",
+        "Oz",
+        "O2",
+        "Iz"
+      ],
+      "excluded_channels": [
+        "Fc1",
+        "Af7",
+        "Af3",
+        "Af8",
+        "F7",
+        "F5",
+        "F3",
+        "F8",
+        "Ft8"
+      ]
+    },
+    {
+      "reference": "S004R01@8s",
+      "channels": [
+        "Fc5",
+        "Fc3",
+        "Fc1",
+        "Fcz",
+        "Fc2",
+        "Fc4",
+        "Fc6",
+        "C5",
+        "C1",
+        "Cz",
+        "C2",
+        "C4",
+        "C6",
+        "Cp5",
+        "Cp3",
+        "Cp1",
+        "Cpz",
+        "Cp2",
+        "Cp4",
+        "Cp6",
+        "Fp1",
+        "Fpz",
+        "Fp2",
+        "Af7",
+        "Afz",
+        "Af4",
+        "F3",
+        "F1",
+        "Fz",
+        "F2",
+        "F4",
+        "Ft7",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "Tp7",
+        "Tp8",
+        "P5",
+        "P3",
+        "P1",
+        "Pz",
+        "P2",
+        "P4",
+        "P6",
+        "P8",
+        "Po7",
+        "Po3",
+        "Poz",
+        "Po4",
+        "Po8",
+        "O1",
+        "Oz",
+        "O2",
+        "Iz"
+      ],
+      "excluded_channels": [
+        "C3",
+        "Af3",
+        "Af8",
+        "F7",
+        "F5",
+        "F6",
+        "F8",
+        "Ft8",
+        "P7"
+      ]
+    }
+  ],
+  "summary": {
+    "flat": {
+      "trials": 6,
+      "detected": 6,
+      "detection_rate": 1.0,
+      "unflagged_control_trials": 6,
+      "new_detections": 6,
+      "new_detection_rate": 1.0,
+      "untreated_segments_flagged": 0,
+      "by_level": {
+        "0.6": {
+          "trials": 2,
+          "detected": 2
+        },
+        "1.0": {
+          "trials": 2,
+          "detected": 2
+        },
+        "1.4": {
+          "trials": 2,
+          "detected": 2
+        }
+      }
+    },
+    "noisy": {
+      "trials": 6,
+      "detected": 4,
+      "detection_rate": 0.6666666666666666,
+      "unflagged_control_trials": 6,
+      "new_detections": 4,
+      "new_detection_rate": 0.6666666666666666,
+      "untreated_segments_flagged": 0,
+      "by_level": {
+        "0.6": {
+          "trials": 2,
+          "detected": 0
+        },
+        "1.0": {
+          "trials": 2,
+          "detected": 2
+        },
+        "1.4": {
+          "trials": 2,
+          "detected": 2
+        }
+      }
+    },
+    "line": {
+      "trials": 6,
+      "detected": 6,
+      "detection_rate": 1.0,
+      "unflagged_control_trials": 6,
+      "new_detections": 6,
+      "new_detection_rate": 1.0,
+      "untreated_segments_flagged": 2,
+      "by_level": {
+        "0.6": {
+          "trials": 2,
+          "detected": 2
+        },
+        "1.0": {
+          "trials": 2,
+          "detected": 2
+        },
+        "1.4": {
+          "trials": 2,
+          "detected": 2
+        }
+      }
+    },
+    "blink": {
+      "trials": 6,
+      "detected": 6,
+      "detection_rate": 1.0,
+      "unflagged_control_trials": 6,
+      "new_detections": 6,
+      "new_detection_rate": 1.0,
+      "untreated_segments_flagged": 0,
+      "by_level": {
+        "0.6": {
+          "trials": 2,
+          "detected": 2
+        },
+        "1.0": {
+          "trials": 2,
+          "detected": 2
+        },
+        "1.4": {
+          "trials": 2,
+          "detected": 2
+        }
+      }
+    },
+    "muscle": {
+      "trials": 6,
+      "detected": 6,
+      "detection_rate": 1.0,
+      "unflagged_control_trials": 6,
+      "new_detections": 6,
+      "new_detection_rate": 1.0,
+      "untreated_segments_flagged": 0,
+      "by_level": {
+        "0.6": {
+          "trials": 2,
+          "detected": 2
+        },
+        "1.0": {
+          "trials": 2,
+          "detected": 2
+        },
+        "1.4": {
+          "trials": 2,
+          "detected": 2
+        }
+      }
+    }
+  },
+  "controls": [
+    {
+      "reference": "S004R01@0s",
+      "counts": {
+        "flat": 0,
+        "noisy": 0,
+        "line": 4,
+        "blink": 0,
+        "muscle": 0
+      }
+    },
+    {
+      "reference": "S004R01@8s",
+      "counts": {
+        "flat": 0,
+        "noisy": 0,
+        "line": 4,
+        "blink": 0,
+        "muscle": 0
+      }
+    }
+  ],
+  "trials": [
+    {
+      "reference": "S004R01@0s",
+      "kind": "flat",
+      "level": 0.6,
+      "seed": 42,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "flat",
+      "level": 1.0,
+      "seed": 43,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "flat",
+      "level": 1.4,
+      "seed": 44,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "noisy",
+      "level": 0.6,
+      "seed": 45,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": false,
+      "control_target_flagged": false,
+      "new_detection": false
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "noisy",
+      "level": 1.0,
+      "seed": 46,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "noisy",
+      "level": 1.4,
+      "seed": 47,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "line",
+      "level": 0.6,
+      "seed": 48,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "line",
+      "level": 1.0,
+      "seed": 49,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "line",
+      "level": 1.4,
+      "seed": 50,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "blink",
+      "level": 0.6,
+      "seed": 51,
+      "targets": [
+        "Fp1",
+        "Fpz"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "blink",
+      "level": 1.0,
+      "seed": 52,
+      "targets": [
+        "Fp1",
+        "Fpz"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "blink",
+      "level": 1.4,
+      "seed": 53,
+      "targets": [
+        "Fp1",
+        "Fpz"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "muscle",
+      "level": 0.6,
+      "seed": 54,
+      "targets": [
+        "T7",
+        "T8"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "muscle",
+      "level": 1.0,
+      "seed": 55,
+      "targets": [
+        "T7",
+        "T8"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@0s",
+      "kind": "muscle",
+      "level": 1.4,
+      "seed": 56,
+      "targets": [
+        "T7",
+        "T8"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "flat",
+      "level": 0.6,
+      "seed": 57,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "flat",
+      "level": 1.0,
+      "seed": 58,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "flat",
+      "level": 1.4,
+      "seed": 59,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "noisy",
+      "level": 0.6,
+      "seed": 60,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": false,
+      "control_target_flagged": false,
+      "new_detection": false
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "noisy",
+      "level": 1.0,
+      "seed": 61,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "noisy",
+      "level": 1.4,
+      "seed": 62,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "line",
+      "level": 0.6,
+      "seed": 63,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "line",
+      "level": 1.0,
+      "seed": 64,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "line",
+      "level": 1.4,
+      "seed": 65,
+      "targets": [
+        "Fc5"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "blink",
+      "level": 0.6,
+      "seed": 66,
+      "targets": [
+        "Fp1",
+        "Fpz"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "blink",
+      "level": 1.0,
+      "seed": 67,
+      "targets": [
+        "Fp1",
+        "Fpz"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "blink",
+      "level": 1.4,
+      "seed": 68,
+      "targets": [
+        "Fp1",
+        "Fpz"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "muscle",
+      "level": 0.6,
+      "seed": 69,
+      "targets": [
+        "T7",
+        "T8"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "muscle",
+      "level": 1.0,
+      "seed": 70,
+      "targets": [
+        "T7",
+        "T8"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    },
+    {
+      "reference": "S004R01@8s",
+      "kind": "muscle",
+      "level": 1.4,
+      "seed": 71,
+      "targets": [
+        "T7",
+        "T8"
+      ],
+      "start": 2,
+      "stop": 4,
+      "detected": true,
+      "control_target_flagged": false,
+      "new_detection": true
+    }
+  ],
+  "method": "Non-overlapping 8 s segments: retain sensors with SD >2 and <40 uV, peak-to-peak <180 uV; require at least four including forehead and temporal sensors. Low-amplitude references, not independently certified artifact-free. Injection at 2-4 s. Detection requires correct artifact, target channel and overlapping time window. Untreated flags are background flag rates, not verified false positives. Paired new-detection rates exclude already-flagged targets. No clinical accuracy claim."
+}
