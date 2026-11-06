@@ -1,6 +1,6 @@
 # EEG session quality check
 
-I built a recording quality report because I needed a way to tell whether an EEG recording was worth analysing before using it. EEG measures small electrical changes through sensors on the scalp. A loose sensor, a blink, muscle tension or electrical interference can hide the signal I want to study.
+I built an EEG recording quality checker because I needed a way to tell whether an EEG recording was worth analysing before using it. EEG measures small electrical changes through sensors on the scalp. A loose sensor, a blink, muscle tension or electrical interference can hide the signal I want to study.
 
 My tool reads a recording, marks suspicious sensors and times, and gives it a score with a reason: **usable**, **usable with caveats** or **not usable**. I can see what needs attention before deciding which parts to keep. It screens the recording without changing it.
 
@@ -30,6 +30,16 @@ uv run eeg-qc report path/to/public-recording.edf --line-hz 50 --output reports/
 ```
 
 The command writes both `.html` and `.json`. For other EDFs, I check that auxiliary sensors have standard type prefixes such as `EOG` or `EMG` followed by a space; MNE excludes those sensors. Untyped channels are assumed to be EEG, so an EDF with unlabelled auxiliary sensors needs its channel types corrected before use. It rejects recordings that are too short, contain invalid values or cannot resolve the electrical frequency being checked. Missing forehead sensors produce an explicit caveat because blink screening cannot run.
+
+## Compare rest with imagined movement
+
+I also use the quality checks before comparing quiet rest with imagined movement. The analysis looks at how much signal is present in two frequency ranges, then trains a classifier (a model that chooses between two labels). I compare tests on recordings from the same person with tests on a person the model has never seen. The latter is a more useful check of whether it generalizes to another person.
+
+```sh
+uv run python -m eeg_session_qc.imagery
+```
+
+This downloads public PhysioNet imagery recordings for 20 people into `data/imagery` and writes a figure, a generated methods and results explanation, and detailed JSON to `reports/imagery`. To use a smaller selection, add `--subjects 2 8 11`. At least three people must pass the quality screen with enough examples of both classes. In my saved run, 6 of 20 people passed with enough examples. Average balanced accuracy was 63.1% within person and 59.7% on held-out people; the uncertainty interval for the difference includes zero. See [the generated methods and results](reports/imagery/methods-results.md) and [figure](reports/imagery/comparison.png). The results depend on which recordings pass; the quality rules are conservative and have not been validated by experts. This experiment is not a diagnostic tool.
 
 ## What I checked
 
