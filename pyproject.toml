@@ -7,7 +7,13 @@ name = "eeg-session-qc"
 version = "0.1.0"
 description = "Explainable EEG recording quality screening on public data"
 requires-python = ">=3.11"
-dependencies = ["mne>=1.10,<2", "numpy>=2,<3", "scipy>=1.15,<2"]
+dependencies = [
+    "matplotlib>=3.9,<4",
+    "mne>=1.10,<2",
+    "numpy>=2,<3",
+    "scikit-learn>=1.6,<2",
+    "scipy>=1.15,<2",
+]
 
 [project.scripts]
 eeg-qc = "eeg_session_qc.cli:main"
